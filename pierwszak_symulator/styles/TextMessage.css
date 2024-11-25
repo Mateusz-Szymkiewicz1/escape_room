@@ -1,0 +1,71 @@
+.TextMessage, .Question{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 18vh;
+    padding: 3vw;
+    padding-top: 3vh;
+    background: var(--menu-background);
+    border-top: 1px solid var(--menu-border-color);
+    color: var(--menu-font-color);
+    z-index: 1000;
+}
+.TextMessage_p, .Question_p{
+    margin: 0;
+    font-size: 4vw;
+}
+.TextMessage span, .Question span{
+    opacity: 0;
+}
+.TextMessage span.revealed, .Question span.revealed{
+    opacity: 1;
+}
+.TextMessage_button{
+    margin: 0;
+    padding: 0;
+    font-size: 3vw;
+    -webkit-appearance: none;
+    background: none;
+    border: 0;
+    font-family: inherit;
+    cursor: pointer;
+    position: absolute;
+    right: 7px;
+    bottom: 3px;
+    color:#fff;
+}
+.TextMessage_big{
+    height: 27vh;
+}
+.TextMessage_big > img{
+    height: 10vw;
+    aspect-ratio: 1;
+    background: var(--menu-border-color);
+    float: left;
+    border: 1px solid var(--menu-font-color);
+}
+.npc_title{
+    display: none;
+}
+.TextMessage_big > p {
+   margin-left: 11vw !important;
+}
+.Question{
+    height: 44vh;
+    overflow-y: auto;
+}
+.Question label{
+    display: block;
+    background: var(--menu-selected-background);
+    margin-top: 2vh;
+    color: #fff;
+    padding-left: 10px;
+    font-size: 3vw;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.Question label:hover{
+    background: #691929;
+    transform: translateY(-1px);
+}

@@ -1,0 +1,94 @@
+:root{
+    --border-color: #291d4d;
+    --dialog-background: #fff3b4;
+    --menu-background: #8b3b4b;
+    --menu-border-color: #a48465;
+    --menu-font-color: #fff;
+    --menu-selected-background: #580818;
+}
+  @font-face{
+                    font-family: font;
+                src: url('../font.otf');
+            }
+* {
+  box-sizing:border-box;
+}
+body {
+  background: #580818;
+  padding: 20px;
+  margin: 0;
+    font-family: font;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.game-container {
+    background:#050505;
+    height: 100%;
+  outline: 1px solid #000;
+user-select: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container > canvas {
+  image-rendering: pixelated;
+}
+@media only screen and (min-width: 100px) {
+  .game-container > canvas{
+    transform: scale(2);
+  }
+}
+@media only screen and (min-height: 100px) {
+  .game-container > canvas{
+    transform: scale(2);
+  }
+}
+@media only screen and (min-width: 300px) {
+  .game-container > canvas{
+    transform: scale(3);
+  }
+  canvas.room2{
+    transform: scale(4);
+  }
+}
+@media only screen and (min-height: 300px) {
+  .game-container > canvas{
+    transform: scale(3);
+  }
+}
+@media only screen and (min-width: 700px) {
+  .game-container > canvas{
+    transform: scale(4);
+  }
+}
+@media only screen and (min-height: 700px) {
+  .game-container > canvas{
+    transform: scale(4);
+  }
+  canvas.room2{
+    transform: scale(6);
+  }
+}
+@media only screen and (min-width: 900px) {
+  .game-container > canvas{
+    transform: scale(5);
+  }
+  canvas.room2{
+    transform: scale(8);
+  }
+}
+@media only screen and (min-height: 900px) {
+  .game-container > canvas{
+    transform: scale(5);
+  }
+  canvas.room2{
+    transform: scale(8);
+  }
+}
+div.room2{
+  filter: brightness(0.4);
+}

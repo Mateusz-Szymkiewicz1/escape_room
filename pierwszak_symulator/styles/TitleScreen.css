@@ -1,0 +1,50 @@
+.TitleScreen {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -50px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+   background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        url("../images/title_bg.jpg");
+        background-size: cover
+}
+.TitleScreen .KeyboardMenu {
+  width: 100%;
+  margin: 0 auto;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+}
+.TitleScreen button {
+  color: #fff;
+  justify-content: center;
+  padding:2vh;
+    transition: all 0.25s;
+    margin-top: 10px;
+}
+.TitleScreen button:hover, .TitleScreen button:focus{
+    transform: translateY(-2px);
+}
+.TitleScreen .DescriptionBox {
+  background: transparent;
+  color: #fff;
+  border: 0;
+  text-align: center;
+}
+h1{
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+    font-size: 7vh;
+}
