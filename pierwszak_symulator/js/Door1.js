@@ -19,19 +19,12 @@ class Door1{
       utils.turn_hud_on();
       this.element.remove();
       this.esc.unbind();
+      this.enter.unbind();
       this.onComplete();
-  }       
- async init() {
-      this.createElement();
-      document.querySelector("canvas").style.filter = "blur(4px)";
-      utils.turn_hud_off();
-      document.querySelector(".game-container").appendChild(this.element);
-      let this2 = this;
-      this.esc = new KeyPressListener("Escape", () => {
-          this.close();
-      });
-      document.querySelector('.door1 button').addEventListener('click', function(){
-        let odp = document.querySelector('.door1 input').value
+  }    
+  check(){
+    let this2 = this;
+    let odp = document.querySelector('.door1 input').value
         if(odp.toLowerCase() == "anteros"){
           const eventHandler4 = new OverworldEvent({
             type: "textMessage",text: 'Znalazłeś "Klucz_1"!'
@@ -61,6 +54,21 @@ class Door1{
               document.querySelector(".door1 input").style.animation = "";  
           }, 1200)
         }
+  }   
+ async init() {
+      this.createElement();
+      document.querySelector("canvas").style.filter = "blur(4px)";
+      utils.turn_hud_off();
+      document.querySelector(".game-container").appendChild(this.element);
+      let this2 = this;
+      this.esc = new KeyPressListener("Escape", () => {
+          this.close();
+      });
+      this.enter = new KeyPressListener("Enter", () => {
+        this2.check()
+      });
+      document.querySelector('.door1 button').addEventListener('click', function(){
+        this2.check()
       })
   }
 }

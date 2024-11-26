@@ -81,12 +81,12 @@ user-select: none;
     transform: scale(8);
   }
 }
-@media only screen and (min-height: 900px) {
+@media only screen and (min-width: 1200px) {
   .game-container > canvas{
-    transform: scale(5);
+    transform: scale(7);
   }
   canvas.room2{
-    transform: scale(8);
+    transform: scale(9);
   }
 }
 div.room2{

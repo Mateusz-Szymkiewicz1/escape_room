@@ -267,6 +267,17 @@ class OverworldEvent{
         });
         door3.init();
     }
+    door4(resolve){
+        window.map.isPaused = true;
+        const door4 = new Door4({
+            onComplete: () => {
+                resolve();
+                window.map.isPaused = false;
+                window.map.overworld.startGameLoop();
+            }
+        });
+        door4.init();
+    }
     play_audio(resolve){
         let audio = undefined;
         if(this.clone){

@@ -24,6 +24,7 @@ class Door3{
       this.onComplete();
   }   
   game(){
+    this.enter.unbind()
     let this2 = this;
     this.element.innerHTML = `
         <canvas id="gameCanvas"></canvas>
@@ -210,6 +211,9 @@ requestAnimationFrame(gameLoop);
       let this2 = this;
       this.esc = new KeyPressListener("Escape", () => {
           this.close();
+      });
+      this.enter = new KeyPressListener("Enter", () => {
+        this.game();
       });
       document.querySelector(".door3 button").addEventListener("click", function(){
         this2.game()

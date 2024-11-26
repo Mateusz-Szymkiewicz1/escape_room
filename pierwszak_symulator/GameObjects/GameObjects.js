@@ -19,4 +19,9 @@ window.GameObjects = [
     src: "images/Objects/klucz_quiz2.png",
     desc: "4/5",
   },
+  {
+    id: "Klucz_5",
+    src: "images/Objects/klucz_kot.png",
+    desc: "5/5",
+  },
 ];

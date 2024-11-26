@@ -570,7 +570,7 @@ image-rendering: pixelated;
     margin-left: 5px;
     color: #d63b2b;
 }
-.door1, .door2, .door3{
+.door1, .door2, .door3, .door4{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -578,7 +578,7 @@ image-rendering: pixelated;
 .door1 div, .door2 > div, .door3 > div{
     margin-top: -7vh;
 }
-.door1 h2, .door2 h2, .door3 h2{
+.door1 h2, .door2 h2, .door3 h2, .door4 h2{
     text-align: center;
     font-size: 5vw;
     margin-bottom: 2vh;
@@ -614,4 +614,27 @@ image-rendering: pixelated;
 .door3 canvas {
     background-color: black;
     border: 2px solid white;
+}
+.door4 div{
+    display: flex;
+    justify-content: center;
+}
+.door4 div div{
+    background-color: var(--menu-selected-background);
+    padding: 10px;
+    margin: 1vw;
+}
+.door4 div div img{
+    image-rendering: pixelated;
+    height: 3vw;
+    width: 3vw;
+    opacity: 0.3;
+    filter: saturate(0.5);
+}
+.door4{
+    flex-direction: column;
+}
+.door4 .full{
+    opacity: 1;
+    filter: none;
 }
