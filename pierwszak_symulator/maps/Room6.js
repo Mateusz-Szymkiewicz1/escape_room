@@ -33,6 +33,14 @@ window.OverworldMaps.Room6 = {
       counter: 0,
       talking: [{events: [{type: "door4"},]},],
   }), 
+  kot: new Person({
+    isPlayerControlled: false,
+    src: "images/maps/blank.png",
+    x: utils.withGrid(2),
+    y: utils.withGrid(3),
+    counter: 0,
+    talking: [{events: [{type: "cat"},]},],
+}), 
   },
   walls: {
     [utils.asGridCoord(4, 9)]: true,

@@ -278,6 +278,21 @@ class OverworldEvent{
         });
         door4.init();
     }
+    cat(resolve){
+        if(window.heroInventory.find(x => x.id == "Klucz_5")){
+            resolve()
+            return;
+        }
+        window.map.isPaused = true;
+        const cat = new Cat({
+            onComplete: () => {
+                resolve();
+                window.map.isPaused = false;
+                window.map.overworld.startGameLoop();
+            }
+        });
+        cat.init();
+    } 
     play_audio(resolve){
         let audio = undefined;
         if(this.clone){
