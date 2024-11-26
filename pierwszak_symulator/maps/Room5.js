@@ -126,5 +126,6 @@ window.OverworldMaps.Room5 = {
     if(!window.quests.find(x => x.id == "Wspomnienia")){
         quest.add_quest({id: "Wspomnienia",desc: "Przypisz odpowiednie daty",});
     }
+    document.querySelector(".pokoj").innerText = "Sala wspomnień"
   }
 };

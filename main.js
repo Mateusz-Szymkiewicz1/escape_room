@@ -6,7 +6,7 @@ const path = require('path')
 const url = require('url')
  
 let win
- 
+if(require('electron-squirrel-startup')) app.quit()
 function createWindow () {
   // Create the browser window.
   win = new BrowserWindow({width: 704, height: 396,autoHideMenuBar: true,})

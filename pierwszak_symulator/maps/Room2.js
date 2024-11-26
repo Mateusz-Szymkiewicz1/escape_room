@@ -476,5 +476,6 @@ window.OverworldMaps.Room2 = {
     if(!window.quests.find(x => x.id == "Labirynt")){
         quest.add_quest({id: "Labirynt",desc: "Znajdź wyjście z labiryntu",});
     }
+    document.querySelector(".pokoj").innerText = "Labirynt"
   }
 };

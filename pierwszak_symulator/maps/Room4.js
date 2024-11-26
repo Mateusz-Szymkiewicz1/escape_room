@@ -62,6 +62,7 @@ window.OverworldMaps.Room4 = {
     const quest = new QuestLog({onComplete: () => {}});
     if(window.quests.find(x => x.id == "Quiz").progress == 0){
         quest.end_quest("Quiz");
-    }
+    }     
+    document.querySelector(".pokoj").innerText = "Komnata serca"
   }
 };

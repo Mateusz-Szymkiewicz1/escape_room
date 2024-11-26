@@ -1,15 +1,28 @@
+window.showHint = () => {
+    document.querySelectorAll(".first").forEach(el => {
+        if(el.style.textDecoration == "underline"){
+            el.style.textDecoration = ""
+        }else{
+            el.style.textDecoration = "underline"
+        }
+    })
+}
+
 window.books = [
     {
         id: "room1_hint",
         title: "",
         author: "",
-        text: `<p></p>Tęsknota w sercu jak ogień się pali,<br/>
-                Rozwiewa cienie, choć ból wciąż się żali.<br/>
-                Iskra nadziei rozświetla ciemności,<br/>
-                Szeptem się zbliża, by przynieść miłości.<br/>
-                Tajemny uścisk, co czas zatrzymuje,<br/>
-                Aż cały świat w naszych dłoniach pulsuje.<br/>
-                Nic więcej nie chcę, prócz ciebie, kochany.<p></p>`
+        text: `
+        <p></p><span class="first">T</span>ęsknota w sercu jak ogień się pali,<br/>
+                <span class="first">R</span>ozwiewa cienie, choć ból wciąż się żali.<br/>
+                <span class="first">I</span>skra nadziei rozświetla ciemności,<br/>
+                <span class="first">S</span>zeptem się zbliża, by przynieść miłości.<br/>
+                <span class="first">T</span>ajemny uścisk, co czas zatrzymuje,<br/>
+                <span class="first">A</span>ż cały świat w naszych dłoniach pulsuje.<br/>
+                <span class="first">N</span>ic więcej nie chcę, prócz ciebie, kochany.<p></p>
+                <span style="color: #470707;cursor: pointer;" onclick="window.showHint()">Podpowiedź</span>
+                `
     },
     {
         id: "tristan_i_izolda",

@@ -638,3 +638,11 @@ image-rendering: pixelated;
     opacity: 1;
     filter: none;
 }
+.pokoj{
+    position: absolute;
+    top: 1.5vw;
+    left: 2vw;
+    font-size: 4vw;
+    color: gold;
+    z-index: 1000;
+}

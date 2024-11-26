@@ -83,4 +83,7 @@ window.OverworldMaps.Prolog = {
      [utils.asGridCoord(4, 1)]: true,
      [utils.asGridCoord(5, 1)]: true,
   },
+  start_func: () => {
+    document.querySelector(".pokoj").innerText = "Epilog"
+  }
 };

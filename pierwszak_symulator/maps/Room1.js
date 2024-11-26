@@ -343,6 +343,7 @@ window.OverworldMaps.Room1 = {
      [utils.asGridCoord(6, 16)]: true,
   },
   start_func: function(){
+    document.querySelector(".pokoj").innerText = "Biblioteka"
     if(window.quests.length == 2){
         return
     }
