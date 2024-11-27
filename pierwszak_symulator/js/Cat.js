@@ -45,12 +45,12 @@ class Cat{
             y: 200,
             width: 50,
             height: 50,
-            speed: 3.95
+            speed: 3.90
         };
         if(width < 700){
           cat.width = 30
           cat.height = 30
-          cat.speed = 2.45
+          cat.speed = 2.40
         }
         let player = {
             x: 50,
@@ -129,10 +129,10 @@ class Cat{
             if (distance < 20) {
                 this2.close()
                 const eventHandler4 = new OverworldEvent({
-                  type: "textMessage",text: 'Znalazłeś "Klucz_5"!'
+                  type: "textMessage",text: 'Znalazłeś "Klucz Ostateczny"!'
                 },);
                 eventHandler4.init();
-                window.heroInventory.push(window.GameObjects.find(x=> x.id === "Klucz_5"));
+                window.heroInventory.push(window.GameObjects.find(x=> x.id === "Klucz Ostateczny"));
                 const eventHandler = new OverworldEvent({type: "play_audio", audio: "win", volume: 0.1});
                 eventHandler.init();
             }

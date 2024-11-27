@@ -118,7 +118,11 @@ class OverworldEvent{
             const obj = window.map.gameObjects[this.who];
             if(obj.pickUp) {
                 obj.talking = [];
-                window.heroInventory.push(window.GameObjects.find(x=> x.id === obj.id));
+                if(obj.id == "Klucz_2"){
+                    window.heroInventory.push(window.GameObjects.find(x=> x.id === "Klucz Labiryntu"));
+                }else{
+                    window.heroInventory.push(window.GameObjects.find(x=> x.id === obj.id));
+                }
             }
         }
     }
@@ -279,7 +283,7 @@ class OverworldEvent{
         door4.init();
     }
     cat(resolve){
-        if(window.heroInventory.find(x => x.id == "Klucz_5")){
+        if(window.heroInventory.find(x => x.id == "Klucz Ostateczny")){
             resolve()
             return;
         }

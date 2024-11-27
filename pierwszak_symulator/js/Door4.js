@@ -10,11 +10,11 @@ class Door4{
         this.element.innerHTML = `
         <h2>Drzwi</h2>
           <div>
-            <div><img ${window.heroInventory.find(x => x.id == "Klucz_1") ? 'class="full"' : ""} src="images/Objects/klucz_schron.png"></div>
-            <div><img ${window.heroInventory.find(x => x.id == "Klucz_2") ? 'class="full"' : ""} src="images/Objects/klucz_szafka.png"></div>
-            <div><img ${window.heroInventory.find(x => x.id == "Klucz_3") ? 'class="full"' : ""} src="images/Objects/klucz_quiz.png"></div>
-            <div><img ${window.heroInventory.find(x => x.id == "Klucz_4") ? 'class="full"' : ""} src="images/Objects/klucz_quiz2.png"></div>
-            <div><img ${window.heroInventory.find(x => x.id == "Klucz_5") ? 'class="full"' : ""} src="images/Objects/klucz_kot.png"></div>
+            <div><img ${window.heroInventory.find(x => x.id == "Klucz Zagadki") ? 'class="full"' : ""} src="images/Objects/klucz_schron.png"></div>
+            <div><img ${window.heroInventory.find(x => x.id == "Klucz Labiryntu") ? 'class="full"' : ""} src="images/Objects/klucz_szafka.png"></div>
+            <div><img ${window.heroInventory.find(x => x.id == "Klucz Wspomnień") ? 'class="full"' : ""} src="images/Objects/klucz_quiz.png"></div>
+            <div><img ${window.heroInventory.find(x => x.id == "Klucz Pamięci") ? 'class="full"' : ""} src="images/Objects/klucz_quiz2.png"></div>
+            <div><img ${window.heroInventory.find(x => x.id == "Klucz Ostateczny") ? 'class="full"' : ""} src="images/Objects/klucz_kot.png"></div>
           </div>
         `;
     }

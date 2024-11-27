@@ -84,6 +84,6 @@ window.OverworldMaps.Prolog = {
      [utils.asGridCoord(5, 1)]: true,
   },
   start_func: () => {
-    document.querySelector(".pokoj").innerText = "Epilog"
+    document.querySelector(".pokoj").innerText = "Komnata"
   }
 };

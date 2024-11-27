@@ -68,6 +68,6 @@ window.OverworldMaps.Room3 = {
     if(!window.quests.find(x => x.id == "Quiz")){
         quest.add_quest({id: "Quiz",desc: "Odpowiedz poprawnie na wszystkie pytania",});
     }
-    document.querySelector(".pokoj").innerText = "Quiz"
+    document.querySelector(".pokoj").innerText = "Komnata wspomnień"
   }
 };

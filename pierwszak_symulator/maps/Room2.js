@@ -11,7 +11,7 @@ window.OverworldMaps.Room2 = {
             walkable: true,
         }),
         Klucz_2: new Person({
-            id: "Klucz_2",
+            id: "Klucz Labiryntu",
             x: utils.withGrid(46),
             y: utils.withGrid(14),
             pickUp: true,
@@ -22,7 +22,7 @@ window.OverworldMaps.Room2 = {
             talking: [
                 {
                     events: [
-                        {who: "Klucz_2",type: "textMessage",text: 'Znalazłeś "Klucz_2"!'},
+                        {who: "Klucz_2",type: "textMessage",text: 'Znalazłeś "Klucz Labiryntu"!'},
                         {who: "Klucz_2",type: "stand",direction: "left",time: 200},
                    ]
                }
@@ -44,7 +44,7 @@ window.OverworldMaps.Room2 = {
       talking: [
           {
               events: [
-                  {type: "do_code", code: 'if(window.heroInventory.find(x => x.id == "Klucz_2")){const eventHandler = new OverworldEvent({type: "changeMap",map: "Room3",x: utils.withGrid(4),y: utils.withGrid(8),direction: "up"},);eventHandler.init();const eventHandler2 = new OverworldEvent({type: "play_audio",audio:"door_open",volume:"0.1"},);eventHandler2.init();const eventHandler3 = new OverworldEvent({type: "play_audio",audio:"win",volume:"0.1"},);eventHandler3.init();}else{const eventHandler = new OverworldEvent({type: "textMessage",text:"Potrzebujesz klucza nr 2!"},);eventHandler.init();}'}
+                  {type: "do_code", code: 'if(window.heroInventory.find(x => x.id == "Klucz Labiryntu")){const eventHandler = new OverworldEvent({type: "changeMap",map: "Room3",x: utils.withGrid(4),y: utils.withGrid(8),direction: "up"},);eventHandler.init();const eventHandler2 = new OverworldEvent({type: "play_audio",audio:"door_open",volume:"0.1"},);eventHandler2.init();const eventHandler3 = new OverworldEvent({type: "play_audio",audio:"win",volume:"0.1"},);eventHandler3.init();}else{const eventHandler = new OverworldEvent({type: "textMessage",text:"Potrzebujesz klucza nr 2!"},);eventHandler.init();}'}
              ]
          }
      ],
@@ -58,7 +58,7 @@ window.OverworldMaps.Room2 = {
     talking: [
         {
             events: [
-                {type: "do_code", code: 'if(window.heroInventory.find(x => x.id == "Klucz_2")){const eventHandler = new OverworldEvent({type: "changeMap",map: "Room3",x: utils.withGrid(5),y: utils.withGrid(8),direction: "up"},);eventHandler.init();const eventHandler2 = new OverworldEvent({type: "play_audio",audio:"door_open",volume:"0.1"},);eventHandler2.init();const eventHandler3 = new OverworldEvent({type: "play_audio",audio:"win",volume:"0.1"},);eventHandler3.init();}else{const eventHandler = new OverworldEvent({type: "textMessage",text:"Potrzebujesz klucza nr 2!"},);eventHandler.init();}'}
+                {type: "do_code", code: 'if(window.heroInventory.find(x => x.id == "Klucz Labiryntu")){const eventHandler = new OverworldEvent({type: "changeMap",map: "Room3",x: utils.withGrid(5),y: utils.withGrid(8),direction: "up"},);eventHandler.init();const eventHandler2 = new OverworldEvent({type: "play_audio",audio:"door_open",volume:"0.1"},);eventHandler2.init();const eventHandler3 = new OverworldEvent({type: "play_audio",audio:"win",volume:"0.1"},);eventHandler3.init();}else{const eventHandler = new OverworldEvent({type: "textMessage",text:"Potrzebujesz klucza nr 2!"},);eventHandler.init();}'}
            ]
        }
    ],
@@ -465,7 +465,7 @@ window.OverworldMaps.Room2 = {
       const progress = new Progress();
       progress.load();
       progress.heroInventory.forEach(e =>{
-          if(e.id == "Klucz_2"){
+          if(e.id == "Klucz Labiryntu"){
               delete window.OverworldMaps.Room2.gameObjects.Klucz_2;
           }
       })
@@ -476,6 +476,6 @@ window.OverworldMaps.Room2 = {
     if(!window.quests.find(x => x.id == "Labirynt")){
         quest.add_quest({id: "Labirynt",desc: "Znajdź wyjście z labiryntu",});
     }
-    document.querySelector(".pokoj").innerText = "Labirynt"
+    document.querySelector(".pokoj").innerText = "Komnata wytrwałości"
   }
 };

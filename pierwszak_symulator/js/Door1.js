@@ -27,10 +27,10 @@ class Door1{
     let odp = document.querySelector('.door1 input').value
         if(odp.toLowerCase() == "anteros"){
           const eventHandler4 = new OverworldEvent({
-            type: "textMessage",text: 'Znalazłeś "Klucz_1"!'
+            type: "textMessage",text: 'Znalazłeś "Klucz Zagadki"!'
           },);
           eventHandler4.init();
-          window.heroInventory.push(window.GameObjects.find(x=> x.id === "Klucz_1"));
+          window.heroInventory.push(window.GameObjects.find(x=> x.id === "Klucz Zagadki"));
           const eventHandler = new OverworldEvent({
             type: "changeMap",
             map: "Room2",
@@ -61,6 +61,7 @@ class Door1{
       utils.turn_hud_off();
       document.querySelector(".game-container").appendChild(this.element);
       let this2 = this;
+      document.querySelector(".door1 input").focus()
       this.esc = new KeyPressListener("Escape", () => {
           this.close();
       });

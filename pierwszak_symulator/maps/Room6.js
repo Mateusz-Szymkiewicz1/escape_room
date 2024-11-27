@@ -71,6 +71,6 @@ window.OverworldMaps.Room6 = {
     if(window.quests.find(x => x.id == "Wspomnienia").progress == 0){
       quest.end_quest("Wspomnienia");
   }
-  document.querySelector(".pokoj").innerText = "Pogoń"
+  document.querySelector(".pokoj").innerText = "Sala cierpliwości"
   }
 };

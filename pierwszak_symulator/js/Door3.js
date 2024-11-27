@@ -22,15 +22,22 @@ class Door3{
       this.element.remove();
       this.esc.unbind();
       this.onComplete();
+      if(this.interval){
+        clearInterval(this.interval)
+      }
+      if(this.timeout){
+        clearTimeout(this.timeout)
+      }
   }   
   game(){
     this.enter.unbind()
     let this2 = this;
     this.element.innerHTML = `
+        <span class="timer"></span>
         <canvas id="gameCanvas"></canvas>
         <img id="heart" style="display: none;" src="images/Objects/heart.png">
       `;
-      let timeout = setTimeout(() => {
+      this2.timeout = setTimeout(() => {
         this2.close()
         const eventHandler = new OverworldEvent({type: "play_audio", audio: "win", volume: 0.1});
         eventHandler.init();
@@ -42,10 +49,16 @@ class Door3{
           direction: "up"
         },);
         eventHandler2.init();
+        clearInterval(this2.interval)
       }, 30*1000)
       const canvas = document.getElementById("gameCanvas");
       const ctx = canvas.getContext("2d");
-
+      let sekundy = 30;
+      document.querySelector('.timer').innerText = sekundy;
+      this2.interval = setInterval(() => {
+        sekundy--;
+        document.querySelector('.timer').innerText = sekundy;
+      },1000)
       canvas.width = 400;
       canvas.height = 400;
       var width = window.innerWidth
@@ -170,7 +183,7 @@ class Door3{
 
       // End game
       function endGame() {
-        clearTimeout(timeout)
+        clearTimeout(this2.timeout)
          this2.close()
          const eventHandler = new OverworldEvent({type: "play_audio", audio: "wrong", volume: 0.1});
           eventHandler.init();

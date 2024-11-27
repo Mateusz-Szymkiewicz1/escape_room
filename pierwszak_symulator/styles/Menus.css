@@ -615,6 +615,9 @@ image-rendering: pixelated;
     background-color: black;
     border: 2px solid white;
 }
+.door3{
+    flex-direction: column;
+}
 .door4 div{
     display: flex;
     justify-content: center;

@@ -168,7 +168,9 @@ class Overworld {
             });
             StartMapPromise.then(async function(){
                 await this2.map.startCutscene([
-                    {type: "textMessage",text: "..."},
+                    {type: "textMessage",text: "Piotrek, twoja dziewczyna, została porwana przez złego kota"},
+                    {type: "textMessage",text: "który wpadł w szał, bo nie dostał smaczka!"},
+                    {type: "textMessage",text: "Musisz teraz wyruszyć na misję, aby ją uwolnić!"},
                     {type: "do_code",code: `window.sceneTransition.fadeOut();delete window.sceneTransition`},
                     {type: "textMessage",text: "Użyj strzałek/AWSD aby się poruszać"},
                     {type: "textMessage",text: "oraz Enter do interakcji"},
