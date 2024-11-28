@@ -29,7 +29,7 @@ class Person extends GameObject{
     startBehavior(state, behavior){
         this.direction = behavior.direction;
         if(behavior.type === "walk"){
-            if(state.map.isSpaceTaken(this.x, this.y, this.direction)){
+            if(window.map.isSpaceTaken(this.x, this.y, this.direction)){
                if(this.isPlayerControlled != true){
                    behavior.retry && setTimeout(() => {
                        this.startBehavior(state, behavior)
@@ -45,7 +45,7 @@ class Person extends GameObject{
                 const eventHandler = new OverworldEvent({type: "play_audio", audio: "walk", volume: 0.4, speed: speed});
                 eventHandler.init();
             }
-            state.map.moveWall(this.x,this.y,this.direction);  
+            window.map.moveWall(this.x,this.y,this.direction);  
             this.movingProgressRemaining = 16;
             this.updateSprite(state);
         } 

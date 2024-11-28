@@ -596,13 +596,13 @@ image-rendering: pixelated;
 .door2 p {
     margin-bottom: 2vh;
 }
-.door2 button, .door3 button{
+.door2 button, .door3 button, .door4 button{
     margin-top: 2vh;
 }
 .door2 input{
     cursor: pointer;
 }
-.door1 button, .door2 button, .door3 button{
+.door1 button, .door2 button, .door3 button, .door4 button{
     padding: 12px;
     font-size: 2vw;
     background-color: var(--menu-selected-background);
