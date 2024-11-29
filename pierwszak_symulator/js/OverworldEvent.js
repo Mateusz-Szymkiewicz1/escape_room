@@ -319,6 +319,18 @@ class OverworldEvent{
         });
         decision.init(document.querySelector(".game-container"));
     }
+    pet(resolve){
+        let direction = window.map.gameObjects.hero.direction;
+        const eventHandler = new OverworldEvent({type: "punch",who: "hero",hand:"right", direction:direction});
+            eventHandler.init();
+        window.map.gameObjects.cat.sprite.image = new Image();
+        window.map.gameObjects.cat.sprite.image.src = "images/characters/people/kitty2.png"
+        setTimeout(() => {
+            window.map.gameObjects.cat.sprite.image = new Image();
+            window.map.gameObjects.cat.sprite.image.src = "images/characters/people/kitty.png"
+        },1000)
+        resolve()
+    }
     init() {
         return new Promise(resolve => {
             this[this.type](resolve)

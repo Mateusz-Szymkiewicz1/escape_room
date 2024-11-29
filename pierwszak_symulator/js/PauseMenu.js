@@ -16,6 +16,7 @@ class PauseMenu {
                 label: "Zapisz",
                 description: "Zapisz swój postęp",
                 handler: () => {
+                    if(window.map.id == "Room7") return
                     this.progress.save();
                     this.close();
                 }
