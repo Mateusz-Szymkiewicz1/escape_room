@@ -5,12 +5,12 @@ class EndScreen {
   getOptions(pageKey) {
       return [
           {
-              label: "Zakończ",
-              description: "Zakończ grę",
-              handler: () => {
-                document.location.reload(true)
-              }
-          },
+            label: "Zakończ",
+            description: "Zakończ grę",
+            handler: () => {
+              document.location.reload(true)
+            }
+        },
     ]
   }
   createElement() {

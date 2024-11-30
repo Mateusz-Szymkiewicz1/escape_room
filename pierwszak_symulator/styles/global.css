@@ -52,7 +52,7 @@ user-select: none;
     transform: scale(3);
   }
   canvas.room2{
-    transform: scale(4);
+    transform: scale(3.5);
   }
 }
 @media only screen and (min-height: 300px) {
@@ -70,7 +70,7 @@ user-select: none;
     transform: scale(4);
   }
   canvas.room2{
-    transform: scale(6);
+    transform: scale(5);
   }
 }
 @media only screen and (min-width: 900px) {
@@ -78,7 +78,7 @@ user-select: none;
     transform: scale(5);
   }
   canvas.room2{
-    transform: scale(8);
+    transform: scale(7);
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -86,7 +86,7 @@ user-select: none;
     transform: scale(7);
   }
   canvas.room2{
-    transform: scale(9);
+    transform: scale(7);
   }
 }
 div.room2{

@@ -42,7 +42,7 @@ window.OverworldMaps.Home = {
         {
           events: [
             {type: "textMessage", who: "oliwia", faceHero: "oliwia", text:"Oliwia: Znalazłam go na drodze..."},
-            {type: "textMessage", who: "oliwia", faceHero: "oliwia", text:"Oliwia: Nazwałam go *****!"},
+            {type: "textMessage", who: "oliwia", faceHero: "oliwia", text:"Oliwia: Nazwałam go Śnieżynka!"},
             {type: "question", faceHero: "oliwia", text:"Nie mamy dla niego żadnych smaczków... Pójdziesz do sklepu?", options: [
               {text:"Tak", reaction: `const eventHandler4 = new OverworldEvent({type:"endscreen"},);eventHandler4.init();const eventHandler5 = new OverworldEvent({type:"play_audio",audio:"win",volume:0.2});eventHandler5.init();`},
               {text:"Tak", reaction: `const eventHandler4 = new OverworldEvent({type:"endscreen"},);eventHandler4.init();const eventHandler5 = new OverworldEvent({type:"play_audio",audio:"win",volume:0.2});eventHandler5.init();`},

@@ -16,7 +16,7 @@ const fail = `const eventHandler3 = new OverworldEvent({type:"play_audio",audio:
               {type: "do_code",code: 'window.sceneTransition.fadeOut();delete window.sceneTransition'}
             ]);`
 
-const fall = `const eventHandler3 = new OverworldEvent({type:"play_audio",audio:"fall",volume:"0.4"},);
+const fall = `window.map.gameObjects.hero.isPlayerControlled = false;document.querySelector("#audio_walk").pause();const eventHandler3 = new OverworldEvent({type:"play_audio",audio:"fall",volume:"0.4"},);
           eventHandler3.init();
           var StartMapPromise = new Promise(function(resolve) {
                 window.sceneTransition = new SceneTransition();

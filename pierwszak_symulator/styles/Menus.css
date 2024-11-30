@@ -227,6 +227,9 @@
   padding-bottom: 15px;
     overflow-y: scroll;
 }
+.door3{
+    bottom: 2em;
+}
 .QuestLog::-webkit-scrollbar, .book::-webkit-scrollbar, .settings::-webkit-scrollbar, .Question::-webkit-scrollbar, .fights::-webkit-scrollbar{
   width: 1vh;
 }

@@ -9,7 +9,7 @@ class Door2{
         {question: "W którym roku poznałeś Oliwię?", a: "2018", b: "2017", c: "2019", correct: "c"},
         {question: "Jakie zwierzątko jest 'związane' z wami?", a: "kot", b: "pingwin", c: "pies", correct: "b"},
         {question: "Kiedy zrobiliście pierwsze wspólne zdjęcie z Oliwią?", a: "grudzień 2023", b: "maj 2019", c: "sierpień 2022", correct: "c"},
-        {question: "Gdzie się zaczęła wasza bliższa relacja z Oliwią?", a: "na golfie", b: "na Targowicy", c: "pod sklepem", correct: "a"},
+        {question: "Gdzie się zaczęła wasza bliższa relacja z Oliwią?", a: "w golfie", b: "na Targowicy", c: "pod sklepem", correct: "a"},
         {question: "Gdzie był wasz pierwszy wyjazd?", a: "Kraków", b: "Zakopane", c: "Rzeszów", correct: "b"},
         {question: "Jaki pierwszy film obejrzeliście wspólnie?", a: "Legion samobójców", b: "Więzień Labiryntu", c: "Listy do M", correct: "c"},
       ]

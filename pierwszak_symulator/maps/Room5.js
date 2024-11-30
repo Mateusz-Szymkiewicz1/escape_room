@@ -42,7 +42,7 @@ window.OverworldMaps.Room5 = {
       talking: [{events: [
         {type: "question", text: "Byliście na obiedzie z Twoimi rodzicami. Bardzo długo czekaliście na posiłki, ale w końcu dotarły. Po skończonym spotkaniu zamówiliście ubera który...", 
           options: [
-            {text: "...spowodował wypadek", reaction: 'window.stol1 = "wypadek"', req: "!window.stol1"},
+            {text: "...prawie spowodował wypadek", reaction: 'window.stol1 = "wypadek"', req: "!window.stol1"},
             {text: "...jechał okrężnymi drogami", reaction: 'window.stol1 = "drogi"', req: "!window.stol1"},
             {text: "Zamknij"},
           ]
