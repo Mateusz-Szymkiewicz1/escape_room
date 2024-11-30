@@ -344,6 +344,8 @@ window.OverworldMaps.Room1 = {
   },
   start_func: function(){
     document.querySelector(".pokoj").innerText = "Biblioteka"
+    const eventHandler5 = new OverworldEvent({type:"play_audio",audio:"music",volume:0.1});
+  eventHandler5.init();
     if(window.quests.length == 2){
         return
     }

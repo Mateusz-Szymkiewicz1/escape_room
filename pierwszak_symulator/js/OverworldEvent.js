@@ -204,6 +204,17 @@ class OverworldEvent{
         });
         menu.init(document.querySelector(".game-container"));
     }
+    endscreen(resolve) {
+        window.map.isPaused = true;
+        const end = new EndScreen({
+            onComplete: () => {
+                resolve();
+                window.map.isPaused = false;
+                window.map.overworld.startGameLoop();
+            }
+        });
+        end.init(document.querySelector(".game-container"));
+    }
     inventory(resolve){
             window.map.isPaused = true;
             const inventory = new Inventory({

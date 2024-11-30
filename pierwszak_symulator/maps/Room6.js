@@ -67,6 +67,9 @@ window.OverworldMaps.Room6 = {
     [utils.asGridCoord(9, 7)]: true,
   },
   start_func: function(){
+    document.querySelector('#audio_boss').pause()
+    const eventHandler5 = new OverworldEvent({type:"play_audio",audio:"music",volume:0.1});
+  eventHandler5.init();
     const quest = new QuestLog({onComplete: () => {}});
     if(window.quests.find(x => x.id == "Wspomnienia").progress == 0){
       quest.end_quest("Wspomnienia");

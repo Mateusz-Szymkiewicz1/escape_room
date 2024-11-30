@@ -85,5 +85,7 @@ window.OverworldMaps.Prolog = {
   },
   start_func: () => {
     document.querySelector(".pokoj").innerText = "Komnata"
+    const eventHandler5 = new OverworldEvent({type:"play_audio",audio:"music",volume:0.1});
+  eventHandler5.init();
   }
 };

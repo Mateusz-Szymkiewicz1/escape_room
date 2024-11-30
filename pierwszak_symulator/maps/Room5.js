@@ -122,9 +122,11 @@ window.OverworldMaps.Room5 = {
     [utils.asGridCoord(11, 3)]: true,
   },
   start_func: function(){
+    const eventHandler5 = new OverworldEvent({type:"play_audio",audio:"music",volume:0.1});
+  eventHandler5.init();
     const quest = new QuestLog({onComplete: () => {}});
     if(!window.quests.find(x => x.id == "Wspomnienia")){
-        quest.add_quest({id: "Wspomnienia",desc: "Przypisz odpowiednie daty",});
+        quest.add_quest({id: "Wspomnienia",desc: "Przypisz odpowiednie części",});
     }
     document.querySelector(".pokoj").innerText = "Komnata pamięci"
   }

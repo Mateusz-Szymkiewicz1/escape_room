@@ -59,6 +59,8 @@ window.OverworldMaps.Room3 = {
     [utils.asGridCoord(7, 4)]: true,
   },
   start_func:  () => {
+    const eventHandler5 = new OverworldEvent({type:"play_audio",audio:"music",volume:0.1});
+  eventHandler5.init();
     document.querySelector('canvas').classList.remove("room2")
     document.querySelector('.game-container').classList.remove("room2")
     const quest = new QuestLog({onComplete: () => {}});

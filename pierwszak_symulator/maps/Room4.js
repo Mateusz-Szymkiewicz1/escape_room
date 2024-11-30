@@ -59,6 +59,8 @@ window.OverworldMaps.Room4 = {
     [utils.asGridCoord(7, 7)]: true,
   },
   start_func: function(){
+    const eventHandler5 = new OverworldEvent({type:"play_audio",audio:"music",volume:0.1});
+  eventHandler5.init();
     const quest = new QuestLog({onComplete: () => {}});
     if(window.quests.find(x => x.id == "Quiz").progress == 0){
         quest.end_quest("Quiz");

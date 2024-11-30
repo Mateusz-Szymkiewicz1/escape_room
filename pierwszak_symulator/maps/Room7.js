@@ -168,6 +168,9 @@ window.OverworldMaps.Room7 = {
             ],
     },
   start_func: function(){
+    document.querySelector('#audio_music').pause()
+  const eventHandler5 = new OverworldEvent({type:"play_audio",audio:"boss",volume:0.1});
+  eventHandler5.init();
     document.querySelector(".pokoj").innerText = "Sala bossa"
     window.map.startCutscene([
       {type: "textMessage",text: "Boss: Czekałem na ciebie..."},
@@ -197,6 +200,7 @@ window.OverworldMaps.Room7 = {
             const eventHandler6 = new OverworldEvent({type: "textMessage",text: 'to było łatwiejsze niż przypuszczałem...'},);
           eventHandler5.init();
           eventHandler6.init();
+          document.querySelector('#audio_boss').pause()
           }, 3000)
         `},
         {text: "*błagaj o litość*", reaction: fail},

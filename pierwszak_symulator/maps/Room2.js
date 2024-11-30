@@ -460,6 +460,8 @@ window.OverworldMaps.Room2 = {
     [utils.asGridCoord(47, 11)]: true,
   },
   start_func:  () => {
+    const eventHandler5 = new OverworldEvent({type:"play_audio",audio:"music",volume:0.1});
+  eventHandler5.init();
     document.querySelector('canvas').classList.add("room2")
     document.querySelector('.game-container').classList.add("room2")
       const progress = new Progress();
