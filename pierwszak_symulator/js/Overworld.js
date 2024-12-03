@@ -162,18 +162,21 @@ class Overworld {
             var StartMapPromise = new Promise(function(resolve) {
                 window.sceneTransition = new SceneTransition();
                 sceneTransition.init(document.querySelector(".game-container"), () => {
-                    this2.startMap(window.OverworldMaps.Prolog, initialHeroState);
+                    this2.startMap(window.OverworldMaps.Start, initialHeroState);
                     resolve();
                 })
             });
             StartMapPromise.then(async function(){
                 await this2.map.startCutscene([
+                    {type: "do_code",code: `window.sceneTransition.fadeOut();delete window.sceneTransition`},
                     {type: "textMessage",text: "Piotrek, twoja dziewczyna, została porwana przez złego kota"},
                     {type: "textMessage",text: "który wpadł w szał, bo nie dostał smaczka!"},
                     {type: "textMessage",text: "Musisz teraz wyruszyć na misję, aby ją uwolnić!"},
-                    {type: "do_code",code: `window.sceneTransition.fadeOut();delete window.sceneTransition`},
                     {type: "textMessage",text: "Użyj strzałek/AWSD aby się poruszać"},
                     {type: "textMessage",text: "oraz Enter do interakcji"},
+                    {type: "changeMap",map:"Prolog", x: utils.withGrid(4),
+                        y: utils.withGrid(7),
+                        direction: "up"},
                 ])
             }).then(function(){
                 const quest = new QuestLog({onComplete: () => {}});

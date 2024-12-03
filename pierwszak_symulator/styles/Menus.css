@@ -115,26 +115,6 @@
     margin: auto;
     margin-top: 5px;
 }
-.option_box{
-    background:  #715132;
-    width: 120px;
-    height: 100px;
-    color: #fff;
-    font-size: 22px;
-    padding-left: 15px;
-    text-decoration: underline;
-}
-.option_box > span{
-    display: block;
-    margin-top: 15px;
-    cursor: pointer;
-    width: 40px;
-}
-.span_usun, .span_usun_all{
-    color: red;
-    text-decoration: underline;
-    text-decoration-color: red;
-}
 .DecisionBox{
   position:absolute;
   left:5em;
@@ -289,59 +269,6 @@
 .quest:hover, .fight:hover{
     transform: translateY(-0.5px);
 }
-.health_bar, .exp_bar{
-    background: #937354;
-    height: 10px;
-    width: 100px;
-    position:absolute;
-    top: 3px;
-    left: 3px;
-    border: 1px solid #fff;
-    overflow: hidden;
-    cursor: pointer;
-}
-.exp_bar{
-    left: 105px;
-}
-.health_fill, .exp_fill{
-    background: #ef1110;
-    height: 8px;
-    transition: 0.4s;
-}
-.exp_fill{
-    background: #2ecc71;
-}
-.health_bar span, .exp_bar span{
-    color: #fff;
-    font-size: 8px;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: -1px;
-    left: 1px;
-    pointer-events: none;
-}
-.gold{
-    height: 33px;
-    width: 300px;
-    transform: scale(0.5);
-    position: absolute;
-    top: 10px;
-    left: -70px;
-    color: #fff;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-    font-size: 25px;
-}
-.gold > *{
-    float: left;
-    margin: 0;
-    padding: 0;
-    margin-right: 10px;
-    cursor: pointer;
-}
-.gold > span{
-    transition: color 0.2s;
-}
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
@@ -421,65 +348,6 @@ button{
     padding-top: 3px;
     cursor: pointer;
 }
-.product{
-    background: #937354;
-    color: #fff;
-    padding-left: 5px;
-    width: 192px;
-    height: 37px;
-    margin-top: 5px;
-    padding-top: 3px;
-    position: relative;
-    cursor: pointer;
-    transition: 0.4s;
-}
-.product > h3, .product > h4{
-    font-weight: 300;
-}
-.product > span{
-    font-weight: 100;
-    font-size: 9px;
-    margin: 0;
-    padding: 0;
-    display: block;
-    margin-top: 2px;
-}
-.product > h3{
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-}
-.product > img{
-image-rendering: pixelated;
-    position: absolute;
-    top: 4.5px;
-    right: 4px;
-}
-.product > h4{
-    position: absolute;
-    right: 39px;
-    top: 3px;
-    padding: 0;
-    margin: 0;
-    color: #f1c40f;
-    text-shadow: -0.75px 0 black, 0 0.75px black, 0.75px 0 black, 0 -0.75px black;
-}
-.product:hover{
-    background: #826243;
-}
-.product *{
-    pointer-events: none;
-}
-.buff{
-    height: 17px;
-    width: 13px;
-    position: absolute;
-    top: 40px;
-    left: 5px;
-}
-.buff > img{
-    cursor: pointer;
-}
 .book{
     overflow: auto;
     font-weight: 100;
@@ -510,96 +378,6 @@ image-rendering: pixelated;
     word-wrap: break-word;
     margin-top: 2vh;
     margin-bottom: 2vh;
-}
-.fight h3{
-    float: left;
-    margin: 5px;
-    font-size: 17px;
-}
-.fight > img{
-    float: right;
-    margin: 10px;
-    image-rendering: pixelated;
-    transform: scale(1.5);
-}
-.fight p{
-    margin: 5px;
-    font-size: 12px;
-}
-.fight span img, .fights > span > img{
-    image-rendering: pixelated;
-    width: 15px;
-    height: 15px;
-    margin-left: 3px;
-}
-.fight .reward{
-    display: block;
-    margin-left: 5px;
-    margin-top: 35px;
-}
-.fight .exp{
-    margin-left: 5px;
-}
-.fight button{
-    background: #a48465;
-    outline: none;
-    border: 0;
-    font-size: 14px;
-    font-family: inherit;
-    margin-right: 10px;
-    padding: 1px 4px;
-    color: #fff;
-    transition: .4s;
-    margin-left: 5px;
-}
-.fight button:hover{
-    background: #937354;
-}
-.fight .bar{
-    width: 100px;
-    border: 1px solid #826243;
-    height: 8px;
-    margin: 5px;
-    float: left;
-}
-.fight .bar .fill{
-    height: 100%;
-    background: #826243;
-}
-.fight .difficulty{
-    float: left;
-    font-size: 10px;
-    display: block;
-    margin-top: 3px;
-}
-.fight_end span{
-    font-size: 12px;
-    font-weight: 100;
-}
-.fight_end h2{
-    margin-bottom: 5px;
-}
-.fight_end{
-    height: 100px;
-}
-.fight_end .exp{
-    margin-left: 5px;
-    display: block;
-    float: left;
-}
-.fight_end .reward{
-    margin-left: 3px;
-    display: block;
-    float: left;
-}
-.fight_end img{
-    float: left;
-}
-.minutes{
-    font-size: 10px;
-    margin-top: 5px;
-    margin-left: 5px;
-    color: #d63b2b;
 }
 .door1, .door2, .door3, .door4{
     display: flex;

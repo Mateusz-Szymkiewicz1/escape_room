@@ -40,7 +40,7 @@ class TitleScreen {
         this.element = document.createElement("div");
         this.element.classList.add("TitleScreen");
         this.element.innerHTML = (`
-      <h1>Gra typu ten tego bęc</h1>
+      <h1>Kocia Zemsta</h1>
     `);
     }
     close() {
